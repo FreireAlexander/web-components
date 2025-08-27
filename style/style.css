@@ -1,17 +1,50 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
+    color: #1d1e1d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-size: 62.5%;
+    background-color: #f1f3f5;
 }
 
 h1{
-    font-size: 1.6rem;
+    font-size: 2.4rem;
 }
 
-section.test-area{
+h2{
+    font-size: 2rem;
+    margin-block: 12px;
+}
+
+h3, h4 {
+    font-size: 1.6rem;
+    margin-block: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a, p {
+    font-size: 1.2rem;
+}
+
+.section{
     display: grid;
     justify-content: center;
+
+    text-align: left;
+}
+
+header.section{
+    justify-content: start;
+    padding: 24px;
+}
+
+section.breadcrumb a{
+    font-size: 1.6rem;
 }
