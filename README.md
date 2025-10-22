@@ -5,6 +5,10 @@ Todos los nombres de los web components en esta carpeta empiezan por la palabra 
 
 - zero-nombreComponente
 
+## General Recomendations
+
+Avoid using resets with the * wildcard instead use the html tag for get the same result.
+
 
 ## Lista de Web Components
 

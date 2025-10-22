@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Cards</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header class="section">
@@ -16,18 +16,17 @@
     </header>
     <section class="section">
         <h2>Card Style 1</h2>
-        <span>::slotted(h3[slot="title"])</span>
         <h3>Web Component for Card Style 1</h3>
         <zero-card
         img="../media/cover_pic.jpg"
         description="Esto sobreescribvira el parrafo aquel"
         title="Un Blog generico"
         >
-        <span slot="title">El verdadero</span>
+        <span slot="title">El verdadero titulo de la Card y no uno generico</span>
         </zero-card>
     </section>
     <br>
     </section>
-    <script type="module" src="/components/components.js"></script>
+    <script type="module" src="../components/components.js"></script>
 </body>
 </html>

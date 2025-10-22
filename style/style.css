@@ -1,4 +1,4 @@
-*{
+html{
     margin: 0;
     padding: 0;
     font-size: 62.5%;
@@ -8,6 +8,7 @@
 
 body{
     background-color: #f1f3f5;
+    
 }
 
 h1{

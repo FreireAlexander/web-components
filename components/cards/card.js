@@ -59,11 +59,8 @@ export class card extends HTMLElement {
                 <header class="card-info">
                     <section class="meta-data">
                     <h3 class="card-title">
-                    Será que spí?
                         <slot name="title">${property.title}</slot>
-                    </h3>
-                    <h3 class="card-title">${property.title}</h3>
-                    
+                    </h3>                    
                         <div class="card-data">
                             ${property.author ? `<span class="author">${property.author}</span>` : ''}
                             ${property.date ? `<time class="date" datetime="${property.date}">${property.date}</time>` : ''}
@@ -95,12 +92,8 @@ export class card extends HTMLElement {
     getStyle(){
         return `
             <style>
-                *{
-                    margin: 0;
-                    padding: 0;
-                    font-size: 62.5%;
-                }
-
+           
+                
                 /* Card Style */
                 article.card{
                     display: grid;
@@ -159,16 +152,10 @@ export class card extends HTMLElement {
 
                 h3.card-title{
                     font-size: 1.4rem;
-                    color: yellow;
+                    color: red;
                 }
                 
-                [slot="title"]{
-                    font-size: 2rem;
-                    color: green;
-                }
-
-                ::slotted(slot[name="title"]){
-                    font-size: 1.4rem;
+                h3.card-title ::slotted(.cardtitle){
                     color: blue;
                 }
 
